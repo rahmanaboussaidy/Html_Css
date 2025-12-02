@@ -1,0 +1,38 @@
+body{
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.attribution {
+        font-size: 11px; 
+        border-radius: 20px;
+        text-align: center;
+        color: hsl(228, 45%, 44%);
+        background-color: hsl(212, 45%, 89%);
+        width: 320px;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+}
+
+.attribution img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.attribution h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    margin-top: 20px;
+}
+
+.attribution p {
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+    margin-top: 12px;
+}
