@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Designer Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-700 via-pink-600 to-red-500 text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-indigo-600 to-purple-600 shadow z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">MR. RAS</h1>
+      <div class="space-x-6 hidden md:block">
+        <a href="#home" class="hover:text-yellow-300 transition">Home</a>
+        <a href="#features" class="hover:text-yellow-300 transition">Features</a>
+        <a href="#contact" class="hover:text-yellow-300 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-gradient-to-b from-transparent to-red-600/40">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 opacity-0 animate-fadeIn">Build Something Beautiful</h1>
+    <p class="text-lg md:text-xl max-w-2xl mb-8 opacity-0 animate-fadeIn delay-200">
+      A bold, colorful, modern landing page with a designer touch.
+    </p>
+    <a href="#features" class="px-8 py-3 bg-yellow-400 text-black font-semibold rounded-xl text-lg hover:bg-yellow-300 transition-all opacity-0 animate-fadeIn delay-300">
+      Explore Features
+    </a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 px-6 bg-gradient-to-r from-purple-700 to-indigo-700">
+    <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12">Features</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-6 rounded-2xl shadow bg-gradient-to-br from-pink-500 to-red-500 hover:shadow-xl transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">Fast</h3>
+        <p>Experience blazing fast performance with vibrant design.</p>
+      </div>
+      <div class="p-6 rounded-2xl shadow bg-gradient-to-br from-yellow-400 to-orange-500 hover:shadow-xl transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">Responsive</h3>
+        <p>Looks amazing on phones, tablets, and desktops.</p>
+      </div>
+      <div class="p-6 rounded-2xl shadow bg-gradient-to-br from-green-400 to-emerald-600 hover:shadow-xl transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">Creative</h3>
+        <p>Designed with bold colors and a premium aesthetic.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600">
+    <h2 class="text-3xl md:text-4xl font-semibold text-center mb-10">Get in Touch</h2>
+    <div class="max-w-xl mx-auto bg-white/10 backdrop-blur p-8 rounded-2xl shadow border border-white/20">
+      <input type="text" placeholder="Your Name" class="w-full p-3 bg-white/20 text-white placeholder-white/60 border border-white/30 rounded-lg mb-4" />
+      <input type="email" placeholder="Your Email" class="w-full p-3 bg-white/20 text-white placeholder-white/60 border border-white/30 rounded-lg mb-4" />
+      <textarea placeholder="Your Message" rows="4" class="w-full p-3 bg-white/20 text-white placeholder-white/60 border border-white/30 rounded-lg mb-4"></textarea>
+      <button class="w-full bg-yellow-400 text-black py-3 rounded-lg hover:bg-yellow-300 transition font-semibold">Send Message</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-gradient-to-r from-red-600 to-pink-600 text-white mt-10">
+    <p>&copy; 2025 Colorful Landing Page. All rights reserved.</p>
+  </footer>
+
+  <!-- Tailwind Animations -->
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease forwards;
+    }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+  </style>
+</body>
+</html>
